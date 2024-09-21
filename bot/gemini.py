@@ -99,7 +99,7 @@ class GeminiChat:
 
     async def get_chat_session(self, database: DatabaseWrapper, user_id: int, name: str) -> gemini.ChatSession:
         model = gemini.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-1.5-flash-exp-0827",
             safety_settings=SAFETY_SETTINGS,
             generation_config=GENERATION_CONFIG,
             system_instruction=SYSTEM_PROMPT.format(name=name),
